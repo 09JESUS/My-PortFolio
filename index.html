@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h1>Welcome to My Digital Domain</h1>
+        <p>I am Forget Nukeri, an aspiring software developer specializing in cutting-edge technologies and cybersecurity. As an IT student, I am actively seeking learnership and part-time job opportunities to gain practical experience and build my professional
+            profile.
+        </p>
+        <a href="#projects" class="btn-primary">Explore My Projects</a>
+    </div>
+</section>
+<section id="about" class="about">
+    <div class="about-content">
+        <img src="{{ url_for('static', filename='images/image.png') }}" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Passionate developer with a knack for solving complex problems and a deep understanding of cybersecurity. My goal is to push the boundaries of technology and create innovative solutions.</p>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Cybersecurity</li>
+        <li>Data Analysis</li>
+    </ul>
+</section>
+{% endblock %}
